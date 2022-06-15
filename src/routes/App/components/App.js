@@ -5,10 +5,8 @@ import { ThemeContext } from "../../../contexts/ThemeContext";
 import ThemeButton from "./ThemeButton";
 
 function App() {
-  const { darkMode } = useContext(ThemeContext);
-
   return (
-    <div className={`app ${darkMode? "dark-mode":""}`}>
+    <div className={`app`}>
       <div className="level">
         <div>
           <h1 className="title">Dark Mode Challenge</h1>

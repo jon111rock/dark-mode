@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import "../styles/_dark-mode.scss";
 
 export const ThemeContext = createContext();
 
@@ -7,7 +8,7 @@ export function ThemeProvider(props) {
 
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
-      {props.children}
+      <div className={`${darkMode ? "dark-mode" : ""} `}>{props.children}</div>
     </ThemeContext.Provider>
   );
 }
