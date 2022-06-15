@@ -5,6 +5,7 @@ import ThemeButton from "./ThemeButton";
 
 function App() {
   const { darkMode } = useContext(ThemeContext);
+  console.log(darkMode);
 
   return (
     <div className="app">
