@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import "../styles/_app.scss";
 import "../../../styles/_dark-mode.scss";
-import { ThemeContext } from "../../../contexts/ThemeContext";
 import ThemeButton from "./ThemeButton";
 
 function App() {
