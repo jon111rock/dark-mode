@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import "../styles/_app.scss";
+import "../../../styles/_dark-mode.scss";
 import { ThemeContext } from "../../../contexts/ThemeContext";
 import ThemeButton from "./ThemeButton";
 
 function App() {
   const { darkMode } = useContext(ThemeContext);
-  console.log(darkMode);
 
   return (
-    <div className="app">
+    <div className={`app ${darkMode? "dark-mode":""}`}>
       <div className="level">
         <div>
           <h1 className="title">Dark Mode Challenge</h1>

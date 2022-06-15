@@ -15,7 +15,7 @@ export default function ThemeButton() {
       className="app__dark-mode-btn icon level-right"
       onClick={themeToggle}
     >
-      <FontAwesomeIcon icon={darkMode ? faMoon : faSun} />
+      <FontAwesomeIcon className="icon-sun" icon={darkMode ? faSun : faMoon} />
     </button>
   );
 }
