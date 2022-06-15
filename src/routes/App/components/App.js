@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import "../styles/_app.scss";
+import { ThemeContext } from "../../../contexts/ThemeContext";
 
 function App() {
+  const { darkMode } = useContext(ThemeContext);
+  console.log(darkMode);
+
   return (
     <div className="app">
       <div className="level">

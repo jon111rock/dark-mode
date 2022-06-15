@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import AppContainer from './common/containers/App';
-import './styles/_main.scss';
-import Routes from './routes';
+import React from "react";
+import ReactDOM from "react-dom";
+import AppContainer from "./common/containers/App";
+import "./styles/_main.scss";
+import Routes from "./routes";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 ReactDOM.render(
   <AppContainer>
-    <Routes />
+    <ThemeProvider>
+      <Routes />
+    </ThemeProvider>
   </AppContainer>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
